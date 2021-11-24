@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "log": true,
+            "port": 9005,
+            // "hostname": "172.31.64.1",
+            "pathMappings": {
+                "/appdata/www": "${workspaceFolder}/api"
+            }
+        }
+    ]
+}
