@@ -19,3 +19,9 @@ DATABASE_URL=mysql://demo:demo@mysql:3306/symfony_api_platform
 **Paso 6.** Correr _docker exec -it symfony-api-platform-fpm php bin/console doctrine:schema:update --force_ para crear la tablas en la base de datos.
 
 **Listo.** Ahora puedes ingresar desde tu navegador [http://localhost:14000](http://localhost:14000).
+
+### Genere las claves SSL:
+
+```bash
+docker exec -it symfony-api-platform-php-fpm php bin/console lexik:jwt:generate-keypair   
+```
